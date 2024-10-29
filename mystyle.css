@@ -1,3 +1,4 @@
+/* สไตล์พื้นฐานสำหรับทุกอุปกรณ์ */
 body {
       background-color: cornsilk;
       margin: 0;
@@ -8,35 +9,23 @@ body {
       min-height: 100vh;
 }
 
-p {
-      font-size: 22px;
-      text-align: center;
-
-}
-
-.para {
-      text-align: left;
-      margin-left: 60px;
-}
-
-h2 {
-      text-align: center;
-}
-
-h3 {
-      margin-left: 30px;
-}
-
-header {
+header, footer {
       background-color: lightpink;
-      padding: 5px;
+      text-align: center;
+}
+
+header h1, header h2, h2, .timeline, .para {
       text-align: center;
 }
 
 footer {
-      background-color: lightpink;
       padding: 15px;
       margin-top: auto;
+}
+
+p {
+      font-size: 22px;
+      text-align: center;
 }
 
 figcaption {
@@ -44,6 +33,16 @@ figcaption {
       text-align: center;
 }
 
+q {
+      font-size: 20px;
+}
+
+img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+}
 
 .timeline {
       position: relative;
@@ -60,27 +59,21 @@ figcaption {
       border-radius: 8px;
 }
 
-.year {
-      font-weight: bold;
-      font-size: 1.2em;
-      color: #4b8a4d;
-      margin: 15px;
-}
-
+/* การตั้งค่าเมนูนำทาง */
 nav {
       background-color: rgb(232, 132, 147);
       padding: 15px;
-      text-align: center;
 }
 
 nav ul {
       list-style: none;
-      margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
 }
 
 nav ul li {
-      display: inline-block;
       margin: 0 15px;
 }
 
@@ -89,9 +82,30 @@ nav ul li a {
       color: #fff;
       font-size: 1.1em;
       transition: color 0.3s ease;
-      margin: 20px;
 }
 
 nav ul li a:hover {
       color: #333;
+}
+
+/*tablets*/
+@media (max-width: 1024px) {
+      header h1 {
+            font-size: 28px;
+      }
+      header h2 {
+            font-size: 18px;
+      }
+      p {
+            font-size: 20px;
+      }
+      figcaption {
+            font-size: 20px;
+      }
+      q {
+            font-size: 18px;
+      }
+      .timeline {
+            max-width: 90%;
+      }
 }
