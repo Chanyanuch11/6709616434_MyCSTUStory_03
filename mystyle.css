@@ -1,0 +1,97 @@
+body {
+      background-color: cornsilk;
+      margin: 0;
+      padding: 0;
+      font-family: comic sans ms, cursive;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+p {
+      font-size: 22px;
+      text-align: center;
+
+}
+
+.para {
+      text-align: left;
+      margin-left: 60px;
+}
+
+h2 {
+      text-align: center;
+}
+
+h3 {
+      margin-left: 30px;
+}
+
+header {
+      background-color: lightpink;
+      padding: 5px;
+      text-align: center;
+}
+
+footer {
+      background-color: lightpink;
+      padding: 15px;
+      margin-top: auto;
+}
+
+figcaption {
+      font-size: 22px;
+      text-align: center;
+}
+
+
+.timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px 0;
+}
+
+.event {
+      padding: 20px;
+      border: 1px solid #be4b4b;
+      background-color: rgb(255, 255, 253);
+      margin: 10px 0;
+      border-radius: 8px;
+}
+
+.year {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #4b8a4d;
+      margin: 15px;
+}
+
+nav {
+      background-color: rgb(232, 132, 147);
+      padding: 15px;
+      text-align: center;
+}
+
+nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+}
+
+nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+      margin: 20px;
+}
+
+nav ul li a:hover {
+      color: #333;
+}
